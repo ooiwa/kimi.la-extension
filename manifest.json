@@ -1,0 +1,12 @@
+{
+       "name": "KimiLa Ext",
+       "description": "kime.la の非公式エクステンションです。再生中の曲が変わったときに、曲名と歌手名がデスクトップに通知されます。",
+        "version": "0.1",
+        
+        "permissions": ["notifications", "tabs"],
+        "background_page": "bg.html",
+        "content_scripts": [{
+                           "matches": ["http://kimi.la/*"],
+                           "js": ["jquery.js","extScript.js"]
+        }]
+}
